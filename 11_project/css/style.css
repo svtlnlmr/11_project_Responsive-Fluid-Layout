@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'gilroy';
+    src: url("/GitHub_EXAMPLES/11_project/fonts/gilroy-black-webfont.woff2") format('woff2'),
+         url("/GitHub_EXAMPLES/11_project/fonts/gilroy-black-webfont.woff") format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url("/GitHub_EXAMPLES/11_project/fonts/gilroy-bold-webfont.woff2") format('woff2'),
+         url("/GitHub_EXAMPLES/11_project/fonts/gilroy-bold-webfont.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url("/GitHub_EXAMPLES/11_project/fonts/gilroy-medium-webfont.woff2") format('woff2'),
+         url("/GitHub_EXAMPLES/11_project/fonts/gilroy-medium-webfont.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.body {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 500;
+	font-style: normal;
+    background-image: url(../img/main-background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: #0B1D26;
+    min-width: 961px;
+}
+.container {
+	max-width: 1170px;
+    min-width: 961px;
+	margin: 0 auto;
+    padding: 0 15px;
+}
+.header {
+    max-width: 1730px;
+    margin: 25px auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.menu a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: #FBD784;
+}
+.menu a:first-child {
+    margin-right: 40px;
+}
+.menu a:last-child {
+    margin-left: 40px;
+}
+.account {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.span {
+    padding-left: 8px;
+}
+.main-page-fixed {
+    max-width: 1730px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.main-page-fixed-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+}
+.main-page-fixed-menu-wrap {
+    height: 60px;
+    padding: 35px 32px 35px 0;
+    border-right: 3px solid rgba(255, 255, 255, 40%);
+}
+.main-page-fixed-menu a {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main-page-fixed-menu-link:hover {
+    color: #FBD784;
+}
+.main-page-fixed-menu-wrap:hover {
+    border-right: 3px solid #FFFFFF;
+}
+.main-page {
+    margin-top: 182px;
+    margin-bottom: 859px;
+}
+.main-page-wrap {
+    display: flex;
+    align-items: center;
+}
+.main-page-content {
+    display: flex;
+    flex-direction: column;
+}
+.subtitle {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    display: inline-flex;
+    align-items: center;
+}
+.subtitle::before {
+    content: '';
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    margin-right: 24px;
+}
+.main-page-content-title {
+    max-width: 950px;
+    margin: 32px 0;
+    font-family: Times New Roman, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.main-page-content-link {
+    font-weight: 700;
+    line-height: 22px;
+    text-decoration: none;
+    color: #FFFFFF;
+    align-self: flex-start;
+    background-image: url(../img/arrow-main-page.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px;
+}
+.step-list {
+    display: flex;
+    flex-direction: column;
+}
+.step-list-wrap {
+    display: flex;
+    align-items:center;
+    margin-bottom: 200px;
+}
+.step-list-number {
+    font-family: 'gilroy', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 240px;
+    line-height: 240px;
+    color: #FFFFFF;
+    opacity: 0.1;
+    position: absolute;
+    left: -8%;
+    top: -24%;
+}
+.step-list div:nth-child(2) {
+    flex-direction: row-reverse;
+}
+.step-list-content {
+    width: 52.333%;
+    margin-right: 136px;
+    position: relative;
+}
+.step-list div:nth-child(2).step-list-wrap div:first-child {
+    margin-left: 136px;
+    margin-right: 0;
+}
+.step-list-content-title {
+    font-family: 'Times New Roman', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 74px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.step-list-content-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.step-list-content-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FBD784;
+    text-decoration: none;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 16px;
+}
+.step-list-content-link-name {
+    padding-right: 16px;
+}
+.step-list-content-link > .step-list-content-link-name:hover{
+    padding-right: 21px;
+}
+.step-list-img {
+    width: 47.666%;
+}
+.step-list-img img {
+    height: 720px;
+    width: 100%;
+    object-fit: cover;
+}
+.footer {
+    max-width: 1730px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list-logo {
+    max-width: 365px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list-logo-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+.footer-list-menu {
+    display: flex;
+    flex-direction: column;
+}
+.footer-list-menu-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+    margin-bottom: 16px;
+}
+.footer-list-menu-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 8px 0;
+    text-decoration: none;
+    align-self: flex-start;
+}
+.footer-list-menu-link:hover {
+    color: #FBD784;
+}
+.footer-rights {
+    margin-top: 60px;
+    margin-bottom: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-rights-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
